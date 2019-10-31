@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jamshid search</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="img/jamshid.png">
+
+    <!-- Fa4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fa5 CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Fa5 JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+
+    <!-- Bootstrapt CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <!-- Bootstrapt JS -->
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js.map">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js.map">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="js/bootstrap.js.map">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="js/bootstrap.min.js.map">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            background-color: rgb(251, 184, 184);
+        }
+        .a{
+            font-weight: 900px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .en{
+            background-color: rgb(255, 166, 0);
+            padding: 5px 40px;
+            border-radius: 7px;
+            transition: 0.3s;
+            margin: 2px;
+        }
+        .en:hover{
+            background-color: rgb(138, 117, 0);
+            color: white;
+            box-shadow: 3px 3px 3px 3px rgb(255, 220, 220);
+            transform: translateY(-5px);
+        }
+        .ru{
+            background-color: rgb(117, 149, 255);
+            color: black;
+            padding: 5px 40px;
+            border-radius: 7px;
+            transition: 0.3s;
+            margin: 2px;
+        }
+        .ru:hover{
+            background-color: rgb(24, 43, 105);
+            color: white;
+            box-shadow: 3px 3px 3px 3px rgb(214, 224, 255);
+            transform: translateY(-5px);
+        }
+        .uz{
+            background-color: rgb(0, 173, 66);
+            padding: 5px 40px;
+            border-radius: 7px;
+            transition: 0.3s;
+            margin: 2px;
+        }
+        .uz:hover{
+            background-color: rgb(0, 90, 35);
+            color: white;
+            box-shadow: 3px 3px 3px 3px rgb(211, 255, 228);
+            transform: translateY(-5px);
+        }
+        td{
+            background-color: rgb(204, 0, 0);
+            padding: 5px 40px;
+            border-radius: 7px;
+            transition: 0.3s;
+            color: rgb(255, 255, 255);
+            margin: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500px;
+        }
+        td:hover{
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 3px 3px 3px rgb(255, 220, 220);
+            transform: translateY(-5px);
+        }
+        
+        .navbar{
+            transition: 0.3s;
+            padding-top: 20px;
+        }
+        .navbar:hover{
+            box-shadow: 5px 5px 5px 5px rgb(255, 200, 200);
+            transform: translateY(-5px)
+        }
+        .img{
+            transition: 0.3s;
+            border-radius: 360px;
+            margin: 50px 0px 50px 0px;
+        }
+        .img:hover{
+            box-shadow: 10px 10px 10px 10px rgb(109, 81, 81);
+            transform: translateY(-5px)
+        }
+        .img1{
+            transition: 0.3s;
+            border-radius: 360px;
+        }
+        .img1:hover{
+            box-shadow: 5px 5px 5px 5px rgb(255, 175, 175);
+            transform: translateY(-5px)
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #d10101;">
+    <a class="navbar-brand" href="Jamshidnormal.html">
+        <img src="img/Jam.png" alt="" style="width: 100px;" class="img1">
+    </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>​
+
+<div class="container">
+    <div style="text-align: center;">
+       <a href="Jamshidnormal.html" style="text-align: center;">
+            <img src="img/Jam.png" alt="Director" style="width: 500px;text-align: center;" class="img">
+        </a>  
+    <p class="a">Type something in the input field to search the table for <c class="en">English</c>,<c class="ru">На Русском</c> or <c class="uz">	Uzbekcha</c></p> 
+    <h1>Search your important things</h1> 
+  <input class="form-control" id="myInput" type="search" placeholder="Search...">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th class="en">In English</th>
+        <th class="ru">На Русском</th>
+        <th class="uz">Uzbekcha</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+        <tr>
+            <td class="en1">statement</td>
+            <td class="ru1">заявление</td>
+            <td class="uz1">bayonot</td>
+        </tr>
+        <tr>
+            <td class="en1">performance</td>
+            <td class="ru1">производительность</td>
+            <td class="uz1">mahsuldorlik</td>
+        </tr>
+        <tr>
+            <td class="en1">productivity</td>
+            <td class="ru1">продуктивность</td>
+            <td class="uz1">unumdorlik</td>
+        </tr>
+        <tr>
+            <td class="en1">state</td>
+            <td class="ru1">состояние</td>
+            <td class="uz1">holat</td>
+        </tr>
+        <tr>
+            <td class="en1">source code</td>
+            <td class="ru1">исходный код</td>
+            <td class="uz1">manba kodi </td>
+        </tr>
+        <tr>
+            <td class="en1">subheading</td>
+            <td class="ru1">подзаголовок</td>
+            <td class="uz1">qo'shimcha, sarlavha </td>
+        </tr>
+        <tr>
+            <td class="en1">valid</td>
+            <td class="ru1"></td>
+            <td class="uz1">yaroqli, joiz</td>
+        </tr>
+        <tr>
+            <td class="en1">code</td>
+            <td class="ru1">код</td>
+            <td class="uz1">kod</td>
+        </tr>
+        <tr>
+            <td class="en1">protocol</td>
+            <td class="ru1">протокол</td>
+            <td class="uz1">bayonnoma</td>
+        </tr>
+        <tr>
+            <td class="en1">quote</td>
+            <td class="ru1">цитата</td>
+            <td class="uz1">iqtibos</td>
+        </tr>
+        <tr>
+            <td class="en1">standarde</td>
+            <td class="ru1">стандарт</td>
+            <td class="uz1">me'yor</td>
+        </tr>
+        <tr>
+            <td class="en1">standard</td>
+            <td class="ru1">стандартный</td>
+            <td class="uz1">oddiy?</td>
+        </tr>
+        <tr>
+        <td>Precedence</td>
+        <td>первостепенность?</td>
+        <td>ustivorlik?</td>
+        </tr>
+        <tr>
+        <td>Priority</td>
+        <td>приоритет</td>
+        <td>ustivorlik?</td>
+        </tr>
+        <tr>
+        <td>order</td>
+        <td>порядок</td>
+        <td>tartib</td>
+        </tr>
+        <tr>
+        <td>instruction</td>
+        <td>инструкция</td>
+        <td>ko'rsatma, yo'riqnoma?</td>
+        </tr>
+        <tr>
+        <td>operation</td>
+        <td>операция</td>
+        <td>amaliyot</td>
+        </tr>
+        <tr>
+        <td>operator</td>
+        <td>оператор</td>
+        <td>boshqaruvchi</td>
+        </tr>
+        <tr>
+        <td>operand</td>
+        <td>операнд</td>
+        <td>amaliyotchi?</td>
+        </tr>
+        <tr>
+        <td>menu</td>
+        <td>меню</td>
+        <td>imkoniyatlar ro'yxati, imkoniyatnoma?</td>
+        </tr>
+        <tr>
+        <td>hot key, hotkey, shortcut</td>
+        <td>горячая клавиша</td>
+        <td>qisqa tugma</td>
+        </tr>
+        <tr>
+        <td>implicit</td>
+        <td>неявный</td>
+        <td>maxfiy</td>
+        </tr>
+        <tr>
+        <td>convert</td>
+        <td>преобразовывать</td>
+        <td>o'girish</td>
+        </tr>
+        <tr>
+        <td>to round</td>
+        <td>округлять</td>
+        <td>yaxlitlash</td>
+        </tr>
+        <tr>
+        <td>flow control</td>
+        <td>?</td>
+        <td>oqim boshqaruvi</td>
+        </tr>
+        <tr>
+        <td>to floor</td>
+        <td>округлять вверх</td>
+        <td>yuqoriga yaxlitlash</td>
+        </tr>
+        <tr>
+        <td>to ceil</td>
+        <td>округлять вниз</td>
+        <td>pastga yaxlitlash</td>
+        </tr>
+        <tr>
+        <td>explicit</td>
+        <td>явный</td>
+        <td>ravshan</td>
+        </tr>
+        <tr>
+        <td>dissect</td>
+        <td>рассекать</td>
+        <td>kesib o'rganish</td>
+        </tr>
+        <tr>
+        <td>system</td>
+        <td>система</td>
+        <td>tizim</td>
+        </tr>
+        <tr>
+        <td>local</td>
+        <td>локальный, местный</td>
+        <td>mahalliy</td>
+        </tr>
+        <tr>
+        <td>operating system</td>
+        <td>операционная система</td>
+        <td>boshqaruv tizimi</td>
+        </tr>
+        <tr>
+        <td>server</td>
+        <td>server</td>
+        <td>xizmatchi</td>
+        </tr>
+        <tr>
+        <td>deploy</td>
+        <td>развертывать</td>
+        <td>tayyorlab joylamoq</td>
+        </tr>
+        <tr>
+        <td>settings</td>
+        <td>настройки</td>
+        <td>sozlamalar</td>
+        </tr>
+        <tr>
+        <td>paragraph</td>
+        <td>параграф</td>
+        <td>xat boshi</td>
+        </tr>
+        <tr>
+        <td>program</td>
+        <td>программа</td>
+        <td>dastur</td>
+        </tr>
+        <tr>
+        <td>to display</td>
+        <td>отображать</td>
+        <td>akslantirish (Mukammal dasturlash kitobidan)</td>
+        </tr>
+        <tr>
+        <td>a display</td>
+        <td>экран</td>
+        <td>ekran</td>
+        </tr>
+        <tr>
+        <td>execute</td>
+        <td>выполнить</td>
+        <td>bajarmoq</td>
+        </tr>
+        <tr>
+        <td>to pass</td>
+        <td>передавать</td>
+        <td>uzatmoq yoki topshirmoq</td>
+        </tr>
+        <tr>
+        <td>argument</td>
+        <td>аргумент</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>parameter</td>
+        <td>параметр</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>syntax</td>
+        <td>синтаксис</td>
+        <td>tuzilish qoidalari</td>
+        </tr>
+        <tr>
+        <td>heading</td>
+        <td>заголовок</td>
+        <td>sarlavha</td>
+        </tr>
+        <tr>
+        <td>metadata</td>
+        <td>метаданные</td>
+        <td>tavsif xabar</td>
+        </tr>
+        <tr>
+        <td>case</td>
+        <td>регистр</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>application</td>
+        <td>приложение</td>
+        <td>ilova</td>
+        </tr>
+        <tr>
+        <td>project</td>
+        <td>проект</td>
+        <td>loyiha</td>
+        </tr>
+        <tr>
+        <td>convention</td>
+        <td>соглашение</td>
+        <td>kelishuv, kelishilingan odat</td>
+        </tr>
+        <tr>
+        <td>compiler</td>
+        <td>компилятор</td>
+        <td>tuzgich, tuzuvchi</td>
+        </tr>
+        <tr>
+        <td>assembly</td>
+        <td>ассемблер</td>
+        <td>yig'gich, yig'uvchi</td>
+        </tr>
+        <tr>
+        <td>interpreter</td>
+        <td>интерпритатор</td>
+        <td>izohlagich</td>
+        </tr>
+        <tr>
+        <td>email</td>
+        <td>электронная почта</td>
+        <td>elektron pochta qutisi</td>
+        </tr>
+        <tr>
+        <td>command line</td>
+        <td>коммандная строка</td>
+        <td>buyruqlar qatori</td>
+        </tr>
+        <tr>
+        <td>unix shell</td>
+        <td>unix shell</td>
+        <td>yuniks qobiq</td>
+        </tr>
+        <tr>
+        <td>shell</td>
+        <td>оболочка</td>
+        <td>qobiq</td>
+        </tr>
+        <tr>
+        <td>node</td>
+        <td>узел</td>
+        <td>tugun</td>
+        </tr>
+        <tr>
+        <td>function</td>
+        <td>функция</td>
+        <td>funksiya?</td>
+        </tr>
+        <tr>
+        <td>element</td>
+        <td>элемент</td>
+        <td>unsur</td>
+        </tr>
+        <tr>
+        <td>module</td>
+        <td>модуль</td>
+        <td>bo'lim</td>
+        </tr>
+        <tr>
+        <td>variable</td>
+        <td>переменная</td>
+        <td>o'zgaruvchi</td>
+        </tr>
+        <tr>
+        <td>constant</td>
+        <td>константа</td>
+        <td>o'zgarmas</td>
+        </tr>
+        <tr>
+        <td>loop</td>
+        <td>цикл</td>
+        <td>davr, takrorlanish</td>
+        </tr>
+        <tr>
+        <td>maximum</td>
+        <td>максимум</td>
+        <td>eng katta qiymat</td>
+        </tr>
+        <tr>
+        <td>minimum</td>
+        <td>минимум</td>
+        <td>eng kichik qiymat</td>
+        </tr>
+        <tr>
+        <td>engineer</td>
+        <td>инженер</td>
+        <td>muhandis</td>
+        </tr>
+        <tr>
+        <td>ok</td>
+        <td>ок</td>
+        <td>xo'p</td>
+        </tr>
+        <tr>
+        <td>set</td>
+        <td>множество</td>
+        <td>to'plam</td>
+        </tr>
+        <tr>
+        <td>static</td>
+        <td>статичный</td>
+        <td>barqaror, turg'un</td>
+        </tr>
+        <tr>
+        <td>dynamic</td>
+        <td>динамичный</td>
+        <td>harakatlanuvchi</td>
+        </tr>
+        <tr>
+        <td>active</td>
+        <td>активный</td>
+        <td>faol</td>
+        </tr>
+        <tr>
+        <td>activate</td>
+        <td>активировать</td>
+        <td>faollashtirish</td>
+        </tr>
+        <tr>
+        <td>deactivate</td>
+        <td>дезактивировать</td>
+        <td>faolsizlashtirish</td>
+        </tr>
+        <tr>
+        <td>turn on</td>
+        <td>включить</td>
+        <td>yoqish</td>
+        </tr>
+        <tr>
+        <td>turn off</td>
+        <td>выключить</td>
+        <td>o'chirish</td>
+        </tr>
+        <tr>
+        <td>class</td>
+        <td>класс</td>
+        <td>sinf</td>
+        </tr>
+        <tr>
+        <td>type</td>
+        <td>тип</td>
+        <td>tur</td>
+        </tr>
+        <tr>
+        <td>category</td>
+        <td>категория</td>
+        <td>toifa</td>
+        </tr>
+        <tr>
+        <td>interface</td>
+        <td>интерфейс</td>
+        <td>interfeys?</td>
+        </tr>
+        <tr>
+        <td>symbol</td>
+        <td>символ</td>
+        <td>ramz, belgi</td>
+        </tr>
+        <tr>
+        <td>dictionary</td>
+        <td>словарь</td>
+        <td>lug'at</td>
+        </tr>
+        <tr>
+        <td>array</td>
+        <td>массив</td>
+        <td>mavze</td>
+        </tr>
+        <tr>
+        <td>list</td>
+        <td>список</td>
+        <td>ro'yxat</td>
+        </tr>
+        <tr>
+        <td>character</td>
+        <td>знак</td>
+        <td>belgi</td>
+        </tr>
+        <tr>
+        <td>abstract</td>
+        <td>абстрактный</td>
+        <td>mavhum</td>
+        </tr>
+        <tr>
+        <td>virtual</td>
+        <td>виртуальный</td>
+        <td>xayoliy, tasavvurdagi</td>
+        </tr>
+        <tr>
+        <td>virtuality</td>
+        <td>виртуальность</td>
+        <td>xayolot</td>
+        </tr>
+        <tr>
+        <td>string</td>
+        <td>строка</td>
+        <td>matn?, satr</td>
+        </tr>
+        <tr>
+        <td>import</td>
+        <td>импорт</td>
+        <td>olib kirish?</td>
+        </tr>
+        <tr>
+        <td>line</td>
+        <td>строка</td>
+        <td>qator</td>
+        </tr>
+        <tr>
+        <td>integer</td>
+        <td>целое число</td>
+        <td>butun son</td>
+        </tr>
+        <tr>
+        <td>tuple</td>
+        <td>кортеж</td>
+        <td>shoda? dasta? (связка)</td>
+        </tr>
+        <tr>
+        <td>float</td>
+        <td>число с плавающей точкой (дробное число)</td>
+        <td>kasr son</td>
+        </tr>
+        <tr>
+        <td>double</td>
+        <td>число с плавающей точкой двойной точности</td>
+        <td>aniqlik darajasi ikkiga teng bulgan kasr son</td>
+        </tr>
+        <tr>
+        <td>text editor</td>
+        <td>текстовый редактор</td>
+        <td>matn muharriri, matn tahrirlovchisi</td>
+        </tr>
+        <tr>
+        <td>extension</td>
+        <td>расширение</td>
+        <td>kengaytma</td>
+        </tr>
+        <tr>
+        <td>browser</td>
+        <td>браузер</td>
+        <td>brauzer?</td>
+        </tr>
+        <tr>
+        <td>computer</td>
+        <td>компьютер</td>
+        <td>kompyuter</td>
+        </tr>
+        <tr>
+        <td>electronic board</td>
+        <td>электронная плата</td>
+        <td>elektron taxtasi?</td>
+        </tr>
+        <tr>
+        <td>random access memory</td>
+        <td>оперативная память</td>
+        <td>tezkor xotira?</td>
+        </tr>
+        <tr>
+        <td>hard disk drive</td>
+        <td>жесткий диск</td>
+        <td>qattik disk, doimiy xotira?</td>
+        </tr>
+        <tr>
+        <td>motherboard</td>
+        <td>материнская плата</td>
+        <td>ona taxtasi?</td>
+        </tr>
+        <tr>
+        <td>keyboard</td>
+        <td>клавиатура</td>
+        <td>tugmataxta?, tugmalar taxtasi? matn kiritish qurilmasi</td>
+        </tr>
+        <tr>
+        <td>web</td>
+        <td>веб</td>
+        <td>dunyoviy to'r?</td>
+        </tr>
+        <tr>
+        <td>net</td>
+        <td>сеть</td>
+        <td>to'r</td>
+        </tr>
+        <tr>
+        <td>quotes</td>
+        <td>кавычки</td>
+        <td>qo'shtirnoq</td>
+        </tr>
+        <tr>
+        <td>calendar</td>
+        <td>календарь</td>
+        <td>taqvim (Google taqvimidan olingan)</td>
+        </tr>
+        <tr>
+        <td>link</td>
+        <td>ссылка</td>
+        <td>havola (shunday tarjima tarqalgan, masalan Microsoft Outlookda foydalanilgan), ishorat (Mukammal dasturlash kitobidan)</td>
+        </tr>
+        <tr>
+        <td>hyperlink</td>
+        <td>гиперссылка</td>
+        <td>giper-havola</td>
+        </tr>
+        <tr>
+        <td>property</td>
+        <td>свойство</td>
+        <td>xususiyat</td>
+        </tr>
+        <tr>
+        <td>mode</td>
+        <td>режим</td>
+        <td>tuzum? tartibot?</td>
+        </tr>
+        <tr>
+        <td>model</td>
+        <td>модель</td>
+        <td>andoza</td>
+        </tr>
+        <tr>
+        <td>format</td>
+        <td>формат</td>
+        <td>shakl?, tuzilish?, tuzilish turi?</td>
+        </tr>
+        <tr>
+        <td>start</td>
+        <td>запуск</td>
+        <td>ishga tushirmoq</td>
+        </tr>
+        <tr>
+        <td>framework</td>
+        <td>фреймворк</td>
+        <td>sinch</td>
+        </tr>
+        <tr>
+        <td>library</td>
+        <td>библиотека</td>
+        <td>kutubxona</td>
+        </tr>
+        <tr>
+        <td>style</td>
+        <td>стиль</td>
+        <td>uslub, bezak</td>
+        </tr>
+        <tr>
+        <td>event</td>
+        <td>событие</td>
+        <td>hodisa</td>
+        </tr>
+        <tr>
+        <td>file</td>
+        <td>файл</td>
+        <td>fayl?</td>
+        </tr>
+        <tr>
+        <td>table</td>
+        <td>таблица</td>
+        <td>jadval</td>
+        </tr>
+        <tr>
+        <td>audio</td>
+        <td>звук, аудио</td>
+        <td>tovush</td>
+        </tr>
+        <tr>
+        <td>circle</td>
+        <td>круг</td>
+        <td>doira</td>
+        </tr>
+        <tr>
+        <td>id, identifier</td>
+        <td>идентификатор</td>
+        <td>tanishtirovchi?</td>
+        </tr>
+        <tr>
+        <td>expression</td>
+        <td>выражение</td>
+        <td>ifoda</td>
+        </tr>
+        <tr>
+        <td>positive</td>
+        <td>положительный</td>
+        <td>musbat</td>
+        </tr>
+        <tr>
+        <td>negative</td>
+        <td>отрицательный</td>
+        <td>manfiy</td>
+        </tr>
+        <tr>
+        <td>modulo</td>
+        <td>остаток от деления</td>
+        <td>qoldiq</td>
+        </tr>
+        <tr>
+        <td>compare</td>
+        <td>сравнивание</td>
+        <td>taqqoslash</td>
+        </tr>
+        <tr>
+        <td>logic</td>
+        <td>логика</td>
+        <td>mantiq</td>
+        </tr>
+        <tr>
+        <td>container</td>
+        <td>контейнер, сосуд</td>
+        <td>idish</td>
+        </tr>
+        <tr>
+        <td>object</td>
+        <td>объект</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>run time</td>
+        <td>время выполнения</td>
+        <td>bajarilish vaqti</td>
+        </tr>
+        <tr>
+        <td>run</td>
+        <td>запустить</td>
+        <td>ishga tushirish</td>
+        </tr>
+        <tr>
+        <td>virtual machine</td>
+        <td>виртуальная машина</td>
+        <td>tasavvurdagi qurilma</td>
+        </tr>
+        <tr>
+        <td>software</td>
+        <td>программное обеспечение</td>
+        <td>dasturiy ta'minot</td>
+        </tr>
+        <tr>
+        <td>hardware</td>
+        <td>аппаратное обчеспечение</td>
+        <td>qurilmaviy ta'minot? (texnik ta'minot)</td>
+        </tr>
+        <tr>
+        <td>script</td>
+        <td>скрипт</td>
+        <td>dastur? bajariladigan buyruqlar ketma ketligi</td>
+        </tr>
+        <tr>
+        <td>account</td>
+        <td>учетная запись</td>
+        <td>qayd yozuvi, hisob qaydnomasi (<code>Microsoft launcher for Android</code> dan olingan)</td>
+        </tr>
+        <tr>
+        <td>dimension</td>
+        <td>измерение</td>
+        <td>o'lcham</td>
+        </tr>
+        <tr>
+        <td>assign</td>
+        <td>назначить, присвоить</td>
+        <td>biriktirish?, tayinlash?</td>
+        </tr>
+        <tr>
+        <td>print</td>
+        <td>печатать</td>
+        <td>bosish, сhop etish</td>
+        </tr>
+        <tr>
+        <td>category</td>
+        <td>категория</td>
+        <td>toifa</td>
+        </tr>
+        <tr>
+        <td>archive</td>
+        <td>архив</td>
+        <td>xazina</td>
+        </tr>
+        <tr>
+        <td>administrator</td>
+        <td>администратор</td>
+        <td>ma’mur</td>
+        </tr>
+        <tr>
+        <td>database</td>
+        <td>база данных</td>
+        <td>ma’lumotlar ombori</td>
+        </tr>
+        <tr>
+        <td>procedure</td>
+        <td>процедура</td>
+        <td>muolaja</td>
+        </tr>
+        <tr>
+        <td>tag</td>
+        <td>тег</td>
+        <td>yorliq (lug'atdan)</td>
+        </tr>
+        <tr>
+        <td>communication</td>
+        <td>коммуникация</td>
+        <td>aloqa almashuvi</td>
+        </tr>
+        <tr>
+        <td>branching</td>
+        <td>развлетвление</td>
+        <td>tarmoqlanish</td>
+        </tr>
+        <tr>
+        <td>action</td>
+        <td>действие</td>
+        <td>amal</td>
+        </tr>
+        <tr>
+        <td>structure</td>
+        <td>структура</td>
+        <td>tuzilma</td>
+        </tr>
+        <tr>
+        <td>version</td>
+        <td>версия</td>
+        <td>talqin (<a href="https://git-scm.com/book/uz/v2/" rel="nofollow">https://git-scm.com/book/uz/v2/</a>)</td>
+        </tr>
+        <tr>
+        <td>scroll</td>
+        <td>прокручивать</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>to pause</td>
+        <td>приостановить</td>
+        <td>to'xtatish</td>
+        </tr>
+        <tr>
+        <td>value</td>
+        <td>значение</td>
+        <td>qiymat</td>
+        </tr>
+        <tr>
+        <td>real</td>
+        <td>настоящий, реальный</td>
+        <td>haqiqiy</td>
+        </tr>
+        <tr>
+        <td>boolean type</td>
+        <td>булевый тип, логический тип</td>
+        <td>mantiqiy tur</td>
+        </tr>
+        <tr>
+        <td>pause</td>
+        <td>пауза</td>
+        <td>to'xtash</td>
+        </tr>
+        <tr>
+        <td>contatenation</td>
+        <td>конкатенация</td>
+        <td>birlashtirish, qo'shish</td>
+        </tr>
+        <tr>
+        <td>spread</td>
+        <td>?</td>
+        <td>tarqatish</td>
+        </tr>
+        <tr>
+        <td>hash</td>
+        <td>хеш</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>comment</td>
+        <td>комментарий</td>
+        <td>sharh, izoh</td>
+        </tr>
+        <tr>
+        <td>cache</td>
+        <td>кеш</td>
+        <td>kash (ingliz tilidan olingan, shu deb 'kesh' emas) ?</td>
+        </tr>
+        <tr>
+        <td>Absolute</td>
+        <td>Абсолютный</td>
+        <td>Mutloq</td>
+        </tr>
+        <tr>
+        <td>Relative</td>
+        <td>Относительный</td>
+        <td>Nisbiy</td>
+        </tr>
+        <tr>
+        <td>Spam/Junk</td>
+        <td>Спам</td>
+        <td>Nomaqbul</td>
+        </tr>
+        <tr>
+        <td>Folder/Directory</td>
+        <td>Папка</td>
+        <td>Jild (<code>Google Android</code>, <code>Microsoft Outlook</code> dan olingan)</td>
+        </tr>
+        <tr>
+        <td>Content</td>
+        <td>Содержимое, контент</td>
+        <td>Tarkib</td>
+        </tr>
+        <tr>
+        <td>Class method</td>
+        <td>метод класса</td>
+        <td>sinfning usuli</td>
+        </tr>
+        <tr>
+        <td>Method</td>
+        <td>способ</td>
+        <td>usul</td>
+        </tr>
+        <tr>
+        <td>Button</td>
+        <td>Кнопка</td>
+        <td>Tugma</td>
+        </tr>
+        <tr>
+        <td>Mouse</td>
+        <td>Мышка</td>
+        <td>Sichqoncha</td>
+        </tr>
+        <tr>
+        <td>Arrow</td>
+        <td>Стрелка</td>
+        <td>mil (lu'gatdan)</td>
+        </tr>
+        <tr>
+        <td>Pseudo-</td>
+        <td>Псевдо-</td>
+        <td>Yolg'ondakam</td>
+        </tr>
+        <tr>
+        <td>Pseudoelement</td>
+        <td>Псевдоэлемент</td>
+        <td>Yolg'ondakam unsur</td>
+        </tr>
+        <tr>
+        <td>Section</td>
+        <td>Секция</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Text</td>
+        <td>Текст</td>
+        <td>Matn</td>
+        </tr>
+        <tr>
+        <td>align</td>
+        <td>выравнивать</td>
+        <td>saflash, tekislash (Mukammal dasturlash kitobidan)</td>
+        </tr>
+        <tr>
+        <td>Wallpaper</td>
+        <td>Обои</td>
+        <td>Gulqog'oz</td>
+        </tr>
+        <tr>
+        <td>Interval</td>
+        <td>Интервал</td>
+        <td>Oraliq</td>
+        </tr>
+        <tr>
+        <td>pointer</td>
+        <td>указатель</td>
+        <td>ko'rsatgich</td>
+        </tr>
+        <tr>
+        <td>To download</td>
+        <td>Загрузить</td>
+        <td>Yuklab olish</td>
+        </tr>
+        <tr>
+        <td>To upload</td>
+        <td>Skachat, Загрузить</td>
+        <td>Yuklab qo'yish</td>
+        </tr>
+        <tr>
+        <td>A download</td>
+        <td>Загрузка</td>
+        <td>Yuklanma</td>
+        </tr>
+        <tr>
+        <td>Share</td>
+        <td>Поделиться</td>
+        <td>Ulashish, Baham ko'rish</td>
+        </tr>
+        <tr>
+        <td>Tester</td>
+        <td>Тестер</td>
+        <td>Sinovchi</td>
+        </tr>
+        <tr>
+        <td>Test</td>
+        <td>Тест</td>
+        <td>Sinov</td>
+        </tr>
+        <tr>
+        <td>block</td>
+        <td>блок</td>
+        <td>bo'linma</td>
+        </tr>
+        <tr>
+        <td>Privacy</td>
+        <td>Конфиденциальность</td>
+        <td>Maxfiylik</td>
+        </tr>
+        <tr>
+        <td>standard</td>
+        <td>стандарт</td>
+        <td>meyor</td>
+        </tr>
+        <tr>
+        <td>customize</td>
+        <td>кастомизировать?</td>
+        <td>shaxsiylashtirish</td>
+        </tr>
+        <tr>
+        <td>feed</td>
+        <td>лента</td>
+        <td>tasma</td>
+        </tr>
+        <tr>
+        <td>Notification</td>
+        <td>Уведомление</td>
+        <td>Bildirishnoma</td>
+        </tr>
+        <tr>
+        <td>Subsription</td>
+        <td>Подписка</td>
+        <td>Obuna</td>
+        </tr>
+        <tr>
+        <td>Terms of service</td>
+        <td>Правила предоставления услуг</td>
+        <td>Xizmat ko'rsatish shartlari</td>
+        </tr>
+        <tr>
+        <td>Privacy policy</td>
+        <td>Политика конфиденциальности</td>
+        <td>Maxfiylik siyosati</td>
+        </tr>
+        <tr>
+        <td>Accessibility</td>
+        <td>Доступность</td>
+        <td>Hammaboplik, Hamyonboplik</td>
+        </tr>
+        <tr>
+        <td>Dropdown</td>
+        <td>Выпадающий список</td>
+        <td>Tushib keluvchi ro'yxat</td>
+        </tr>
+        <tr>
+        <td>Virtual reality</td>
+        <td>Виртуальная реальность</td>
+        <td>Xayoliy voqelik, Tasavvurdagi voqelik</td>
+        </tr>
+        <tr>
+        <td>Augmented reality</td>
+        <td>Дополненная реальность</td>
+        <td>To'ldirilgan voqelik, Aralashgan voqelik</td>
+        </tr>
+        <tr>
+        <td>Feedback form</td>
+        <td>Форма обратной связи</td>
+        <td>Bog'lanish so'ro'vnomasi</td>
+        </tr>
+        <tr>
+        <td>Form</td>
+        <td>Форма</td>
+        <td>So'ro'vnoma</td>
+        </tr>
+        <tr>
+        <td>Attribute</td>
+        <td>Атрибут</td>
+        <td>Alomat (Mukammal dasturlash kitobidan)</td>
+        </tr>
+        <tr>
+        <td>Document</td>
+        <td>Документ</td>
+        <td>Hujjat</td>
+        </tr>
+        <tr>
+        <td>Anchor</td>
+        <td>Якорь</td>
+        <td>Langar</td>
+        </tr>
+        <tr>
+        <td>Paragraph</td>
+        <td>Параграф</td>
+        <td>Xat boshi</td>
+        </tr>
+        <tr>
+        <td>Input</td>
+        <td>Ввод</td>
+        <td>Kirim</td>
+        </tr>
+        <tr>
+        <td>Output</td>
+        <td>Вывод</td>
+        <td>chiqim</td>
+        </tr>
+        <tr>
+        <td>Field</td>
+        <td>Поле</td>
+        <td>Maydoncha</td>
+        </tr>
+        <tr>
+        <td>Placeholder</td>
+        <td>Заполнитель</td>
+        <td>To'ldirgich</td>
+        </tr>
+        <tr>
+        <td>Default</td>
+        <td>По умолчанию</td>
+        <td>Odatiy qiymat</td>
+        </tr>
+        <tr>
+        <td>Reset</td>
+        <td>Восстановить</td>
+        <td>Qayta tiklash</td>
+        </tr>
+        <tr>
+        <td>Copy</td>
+        <td>Копировать</td>
+        <td>Nusxa ko'chirish</td>
+        </tr>
+        <tr>
+        <td>Paste</td>
+        <td>Вставить</td>
+        <td>Qo'shish</td>
+        </tr>
+        <tr>
+        <td>Copyright</td>
+        <td>Авторские права</td>
+        <td>Mualliflik huquqlari</td>
+        </tr>
+        <tr>
+        <td>License</td>
+        <td>Лицензия</td>
+        <td>Ruxsatnoma</td>
+        </tr>
+        <tr>
+        <td>Certificate</td>
+        <td>Сертификат</td>
+        <td>Shahodatnoma, guvohnoma</td>
+        </tr>
+        <tr>
+        <td>Submit</td>
+        <td>Topshirish</td>
+        <td>Отправить</td>
+        </tr>
+        <tr>
+        <td>Required</td>
+        <td>Обязательный</td>
+        <td>Majburiy</td>
+        </tr>
+        <tr>
+        <td>Optional</td>
+        <td>Необязательный</td>
+        <td>Ixtiyoriy</td>
+        </tr>
+        <tr>
+        <td>checkbox</td>
+        <td>флажок</td>
+        <td>tasdiqlash qutisi</td>
+        </tr>
+        <tr>
+        <td>radio button</td>
+        <td>радио кнопка</td>
+        <td>radio tugma?</td>
+        </tr>
+        <tr>
+        <td>select</td>
+        <td>выбрать</td>
+        <td>tanlash</td>
+        </tr>
+        <tr>
+        <td>textarea</td>
+        <td>?</td>
+        <td>katta matn darchasi?</td>
+        </tr>
+        <tr>
+        <td>media</td>
+        <td>медиа</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>user</td>
+        <td>пользователь</td>
+        <td>foydalanuvchi</td>
+        </tr>
+        <tr>
+        <td>specification</td>
+        <td>спецификация</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>analysis</td>
+        <td>анализ</td>
+        <td>tahlil</td>
+        </tr>
+        <tr>
+        <td>device</td>
+        <td>устройство</td>
+        <td>qurilma</td>
+        </tr>
+        <tr>
+        <td>size</td>
+        <td>размер</td>
+        <td>o'lcham</td>
+        </tr>
+        <tr>
+        <td>volume</td>
+        <td>hajm</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>install</td>
+        <td>установка</td>
+        <td>o'rnatish</td>
+        </tr>
+        <tr>
+        <td>support</td>
+        <td>поддержка</td>
+        <td>qo‘llab-quvvatlash</td>
+        </tr>
+        <tr>
+        <td>publisher</td>
+        <td>издатель</td>
+        <td>noshir</td>
+        </tr>
+        <tr>
+        <td>apply</td>
+        <td>применить</td>
+        <td>tatbiq qilish</td>
+        </tr>
+        <tr>
+        <td>PC</td>
+        <td>ПК</td>
+        <td>ShK</td>
+        </tr>
+        <tr>
+        <td>Concatenation</td>
+        <td>Конкатенация, склеивание</td>
+        <td>birlashtirish, yopishtirish</td>
+        </tr>
+        <tr>
+        <td>Interact</td>
+        <td>Взаимодействовать</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Interactive</td>
+        <td>Интерактивный, взаимодействующий</td>
+        <td>o'zarofaol</td>
+        </tr>
+        <tr>
+        <td>Replication</td>
+        <td>Копирование</td>
+        <td>Nusxalash</td>
+        </tr>
+        <tr>
+        <td>description</td>
+        <td>описание</td>
+        <td>tavsif</td>
+        </tr>
+        <tr>
+        <td>hub</td>
+        <td>?</td>
+        <td>uya (Microsoft tarjimasi, masalan - <a href="https://www.microsoft.com/uz-latn-uz/p/microsoft-to-do/9nblggh5r558?activetab=pivot:overviewtab" rel="nofollow">https://www.microsoft.com/uz-latn-uz/p/microsoft-to-do/9nblggh5r558?activetab=pivot:overviewtab</a>)</td>
+        </tr>
+        <tr>
+        <td>namespace</td>
+        <td>пространство имен</td>
+        <td>nomlar fazosi</td>
+        </tr>
+        <tr>
+        <td>quotes, quotation mark (")</td>
+        <td>кавычки, кавычка</td>
+        <td>tirnoq belgisi, qo'shtirnoq</td>
+        </tr>
+        <tr>
+        <td>'</td>
+        <td>одинарные кавычки, апостроф</td>
+        <td>bittali qo'shtirnoq</td>
+        </tr>
+        <tr>
+        <td>Tilde (~)</td>
+        <td>Тильда, волнистая черта?</td>
+        <td>To'lqin chiziq?</td>
+        </tr>
+        <tr>
+        <td>Sharp (#)</td>
+        <td>Решетка</td>
+        <td>Panjara</td>
+        </tr>
+        <tr>
+        <td>Backtick (`)</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Exclamation mark, Bang (!)</td>
+        <td>восклицательный знак</td>
+        <td>undov belgisi</td>
+        </tr>
+        <tr>
+        <td>At (@)</td>
+        <td>собачка</td>
+        <td>chig'anoq belgisi</td>
+        </tr>
+        <tr>
+        <td>Percent (%)</td>
+        <td>процент</td>
+        <td>foiz belgisi</td>
+        </tr>
+        <tr>
+        <td>(^)</td>
+        <td>?</td>
+        <td>?</td>
+        </tr>
+        <tr>
+        <td>Star (*)</td>
+        <td>звездочка</td>
+        <td>ko'paytirish belgisi</td>
+        </tr>
+        <tr>
+        <td>dash (–)</td>
+        <td>тире</td>
+        <td>chiziq</td>
+        </tr>
+        <tr>
+        <td>hyphen (‐)</td>
+        <td>дефис</td>
+        <td>chiziqcha</td>
+        </tr>
+        <tr>
+        <td>minus sign (−)</td>
+        <td>минус</td>
+        <td>ayirish belgisi</td>
+        </tr>
+        <tr>
+        <td>parenthesis ( )</td>
+        <td>скобка</td>
+        <td>qavs</td>
+        </tr>
+        <tr>
+        <td>bracket, square bracket</td>
+        <td>квадратная скобка</td>
+        <td>to'rtburchak qavs</td>
+        </tr>
+        <tr>
+        <td>({)</td>
+        <td>?</td>
+        <td>katta qavs belgisi</td>
+        </tr>
+        <tr>
+        <td>Square bracket ([)</td>
+        <td>квадратная скобка</td>
+        <td>to'rtburchak qavs belgisi</td>
+        </tr>
+        <tr>
+        <td>Pipe (|)</td>
+        <td>Палка</td>
+        <td>quvur</td>
+        </tr>
+        <tr>
+        <td>Backward slash ()</td>
+        <td>обратный слеш</td>
+        <td>teskari kasr belgisi</td>
+        </tr>
+        <tr>
+        <td>Forward slash (/)</td>
+        <td>слеш</td>
+        <td>kasr belgisi, slesh?</td>
+        </tr>
+        <tr>
+        <td>Colon (:)</td>
+        <td>двоеточие</td>
+        <td>ikki nuqta</td>
+        </tr>
+        <tr>
+        <td>Semicolon (;)</td>
+        <td>точка с запятой</td>
+        <td>nuqta vergul</td>
+        </tr>
+        <tr>
+        <td>Greater (&gt;)</td>
+        <td>больше</td>
+        <td>katta belgisi</td>
+        </tr>
+        <tr>
+        <td>Less (&lt;)</td>
+        <td>меньше</td>
+        <td>kichik belgisi</td>
+        </tr>
+        <tr>
+        <td>Greater or equal (&lt;=)</td>
+        <td>меньше или равно</td>
+        <td>kichik yoki teng</td>
+        </tr>
+        <tr>
+        <td>Less or equal (&gt;=)</td>
+        <td>больше или равно</td>
+        <td>katta yoki teng</td>
+        </tr>
+        <tr>
+        <td>Dot (.)</td>
+        <td>точка</td>
+        <td>nuqta</td>
+        </tr>
+        <tr>
+        <td>Comma (,)</td>
+        <td>запятая</td>
+        <td>vergul</td>
+        </tr>
+        <tr>
+        <td>Question mark (?)</td>
+        <td>вопросительный знак</td>
+        <td>so'roq belgisi</td>
+        </tr>
+      </tbody>
+</table>
+        <a href="Jamshidnormal.html">
+            <img src="img/Jam.png" alt="Director" style="width: 500px" class="img">
+        </a>
+    </div>
+  
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function()  
+    {
+        var value  =
+        $(this).val().toLowerCase();
+        $("#myTable tr").filter(function()
+        {
+
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)});
+    });
+    });
+    </script>
+    </tbody>
